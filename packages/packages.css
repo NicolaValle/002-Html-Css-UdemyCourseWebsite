@@ -1,0 +1,98 @@
+main{
+    padding-top: 32px;
+}
+section{
+    padding: 15px;
+    margin: 15px 15px 15px 0;
+    width: 80%;
+    border: 3px solid #0e4f1f;
+    border-left: none;
+}
+
+.background{
+    background: url("../images/plans-background.jpg");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+section:hover,
+section:active{
+    border-color: coral;
+    box-shadow: 2px 2px 4px black;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#plans{
+    margin-top: 53px;
+}
+
+.free-plan{
+    float: right;
+    margin-right: 0;
+    border-left: 3px solid #0e4f1f;
+    border-right: none;
+    text-align: right;
+}
+
+.plan{
+    background-color:rgba(156, 200, 168,0.95);
+    position: relative;
+}
+
+.plan-premium{
+    background-color: rgba(9, 86, 44, 0.95);
+}
+
+.plan a,
+.plan-premium a{
+    text-decoration: none;
+    display: block;
+}
+
+.plan__title{
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.plan__title-premium{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+.plan__badge{
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 12px;
+    color: white;
+    background: #ff5454;
+    padding: 8px;
+    z-index: 10;
+}
+
+.plan__description{
+    color: #979797;
+    font-weight: bolder;
+}
+
+.plan__description-box{
+    background-color: white;
+    color: #082f12;
+    padding: 15px;
+    border: 1px solid #082f12;
+    font-size: 20px;
+}
+
+.plan-premium a .plan__description{
+    color: #d1d1d1;
+}
