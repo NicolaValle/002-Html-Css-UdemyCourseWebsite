@@ -7,38 +7,24 @@ body {
     margin: 0;
 }
 
-.button{
-    background-color: #0e4f1f;
-    color: white;
-    font: inherit;
-    border: 1.5px solid #0e4f1f;
-    padding: 8px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
 }
-
-.button:hover,
-.button:active {
-    background-color: white;
-    color: #0e4f1f;
-}
-
-button:focus{
-    outline: none;
-}
-
-/* h1 {
-    font-family: sans-serif;
-} */
 
 .main-header {
     width: 100%;
-    background: #2ddf5c;
-    padding: 8px 16px;
     position: fixed;
     top: 0;
     left: 0;
+    background: #2ddf5c;
+    padding: 0.5rem 1rem;
     z-index: 1;
 }
 
@@ -50,19 +36,23 @@ button:focus{
 .main-header__brand {
     color: #0e4f1f;
     text-decoration: none;
-    font-weight: bolder;
-    font-size: 30px;
-    height: 22px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    height: 1.5rem;
+    /* width: 20px; */
+    display: inline-block;
 }
 
 .main-header__brand img {
-    height: 22px;
+    height: 100%;
+    /* width: 100%; */
 }
 
 .main-nav {
     display: inline-block;
     text-align: right;
-    width: calc(100% - 100px);
+    width: calc(100% - 74px);
+    vertical-align: middle;
 }
 
 .main-nav__items {
@@ -73,15 +63,14 @@ button:focus{
 
 .main-nav__item {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-nav__item a {
     text-decoration: none;
     color: #0e4f1f;
-    font-size: 18px;
-    font-weight: bolder;
-    padding: 3px 0;
+    font-weight: bold;
+    padding: 0.2rem 0;
 }
 
 .main-nav__item a:hover,
@@ -93,7 +82,7 @@ button:focus{
 .main-nav__item--cta a {
     color: white;
     background: #ff1b68;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
 }
 
@@ -104,10 +93,10 @@ button:focus{
     border: none;
 }
 
-.main-footer{
-    background-color: black;
-    padding: 32px;
-    margin-top: 48px;
+.main-footer {
+    background: black;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .main-footer__links {
@@ -116,15 +105,39 @@ button:focus{
     padding: 0;
     text-align: center;
 }
+
 .main-footer__link {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
+
 .main-footer__link a {
     color: white;
     text-decoration: none;
 }
+
 .main-footer__link a:hover,
-.main-footer__link a:active{
+.main-footer__link a:active {
     color: #ccc;
+}
+
+.button {
+    background: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: white;
+    color: #0e4f1f;
+}
+
+.button:focus {
+    outline: none;
 }

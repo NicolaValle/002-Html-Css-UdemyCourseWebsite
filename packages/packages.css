@@ -1,16 +1,9 @@
-main{
-    padding-top: 32px;
-}
-section{
-    padding: 15px;
-    margin: 15px 15px 15px 0;
-    width: 80%;
-    border: 3px solid #0e4f1f;
-    border-left: none;
+main {
+    padding-top: 2rem;
 }
 
-.background{
-    background: url("../images/plans-background.jpg"), center/cover;
+.background {
+    background: url("../images/plans-background.jpg") center/cover;
     filter: grayscale(40%);
     width: 100%;
     height: 100%;
@@ -18,82 +11,80 @@ section{
     z-index: -1;
 }
 
-section:hover,
-section:active{
-    border-color: coral;
-    box-shadow: 2px 2px 4px black;
-}
-
-.clearfix{
-    clear: both;
-}
-
-#plans{
-    margin-top: 53px;
-}
-
-.free-plan{
-    float: right;
-    margin-right: 0;
-    border-left: 3px solid #0e4f1f;
-    border-right: none;
-    text-align: right;
-}
-
-.plan{
-    background-color:rgba(156, 200, 168,0.95);
+.package {
+    width: 80%;
+    margin: 1rem 0;
+    border: 4px solid #0e4f1f;
+    border-left: none;
     position: relative;
 }
 
-.plan-premium{
-    background-color: rgba(9, 86, 44, 0.85);
+.package:hover,
+.package:active {
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    border-color: #ff5454;
+    /* border-color: #ff5454 !important; */
 }
 
-.plan a,
-.plan-premium a{
+.package a {
     text-decoration: none;
+    color: inherit;
     display: block;
+    padding: 2rem;
 }
 
-.plan__title{
-    color: black;
-    font-weight: bolder;
-    font-size: 30px;
-}
-
-.plan__title-premium{
-    color: white;
-    font-size: 30px;
-    font-weight: bolder;
-}
-
-
-.plan__badge{
-    color: black;
+.package__badge {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 20px;
-    font-size: 12px;
+    margin: 1.2rem;
+    font-size: 0.8rem;
     color: white;
     background: #ff5454;
-    padding: 8px;
-    z-index: 10;
+    padding: 0.5rem;
 }
 
-.plan__description{
+.package__subtitle {
     color: #979797;
-    font-weight: bolder;
 }
 
-.plan__description-box{
-    background-color: white;
-    color: #082f12;
-    padding: 15px;
-    border: 1px solid #082f12;
-    font-size: 20px;
+.package__info {
+    padding: 1rem;
+    border: 1px solid #0e4f1f;
+    font-size: 1.2rem;
+    color: #0e4f1f;
+    background: white;
 }
 
-.plan-premium a .plan__description{
-    color: #d1d1d1;
+.clearfix {
+    clear: both;
+}
+
+#plus {
+    background: rgba(213, 255, 220, 0.95);
+}
+
+#free {
+    background: rgba(234, 252, 237, 0.95);
+    float: right;
+    border-right: none;
+    border-left: 4px solid #0e4f1f;
+    text-align: right;
+}
+
+#free:hover,
+#free:active {
+    border-left-color: #ff5454;
+}
+
+#premium {
+    background: rgba(14, 79, 31, 0.95);
+}
+
+#premium .package__title {
+    color: white;
+}
+
+#premium .package__subtitle {
+    color: #bbb;
 }
