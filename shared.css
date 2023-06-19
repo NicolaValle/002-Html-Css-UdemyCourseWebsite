@@ -197,6 +197,15 @@ main{
     outline: none;
 }
 
+/* the following means: target all buttons with disabled attribute */
+/* remember that to change this condition JS is needed */
+.button[disabled] {
+    cursor: not-allowed;
+    border: #a1a1a1;
+    background: #ccc;
+    color: #a1a1a1;
+}
+
 .open{
     display: block !important;
 }
